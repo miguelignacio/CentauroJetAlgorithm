@@ -5,8 +5,6 @@
 //  ./example < ../data/single-event.dat
 //----------------------------------------------------------------------
 //
-// Copyright (c) 2014-, Marcel Vos and Ignacio Garcia
-//
 //----------------------------------------------------------------------
 // This file is part of FastJet contrib.
 //
@@ -44,13 +42,11 @@ int main(){
   // example for the creation and execution of the fastjet plugin
   // for the Centauro jet algorithm
   // 
-  // ./example ../data/Pythia-Zp2jets-lhc-pileup-1ev.dat
-  //
   // read in input particles
   //----------------------------------------------------------
   vector<PseudoJet> full_event;
   read_event(full_event);
-  //full_event = SelectorAbsRapMax(4.0)(full_event);
+
   // create the jet definition using the plugin mechanism 
   //----------------------------------------------------------
   fastjet::contrib::CentauroPlugin * centauro_plugin = new fastjet::contrib::CentauroPlugin(1.0); 

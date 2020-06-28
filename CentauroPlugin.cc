@@ -1,7 +1,6 @@
 // $Id: CentauroPlugin.cc 1209 2018-12-05 16:18:01Z vos $
 //
-//The Centauro jet algorithm is described in arXiv:2006.10751, "Asymmetric jet clustering in deep-inelastic scattering", Miguel Arratia, Yiannis Makris, Duff Neill, Felix Ringer, Nobuo Sato.
-  
+//The Centauro jet algorithm is described in arXiv:2006.10751, "Asymmetric jet clustering in deep-inelastic scattering", Miguel Arratia, Yiannis Makris, Duff Neill, Felix Ringer, Nobuo Sato.  
 //----------------------------------------------------------------------
 // This code is part of Fastjet contrib
 
@@ -49,6 +48,7 @@ private:
 
 class CentauroBriefJet {
 public:
+  //For definitions see https://arxiv.org/abs/2006.10751
   // n = (1,0,0,1)
   // nbar = (1,0,0,-1)
   // P = Q/2x(1,0,0,1)                //proton
