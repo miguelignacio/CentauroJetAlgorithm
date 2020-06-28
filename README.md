@@ -8,11 +8,11 @@ We plan to include this code in the standard fastjet-contrib release. Meanwhile 
 To install it, you should copy this folder as "CentauroPlugin" in your fastjet contrib folder (https://fastjet.hepforge.org/contrib/) along with all the other plugings. 
 
 Then do
-  `./configure --only=CentauroPlugin --fastjet-config=YOURPATH/fastjet-install/bin/fastjet-config CXXFLAGS=-fPIC CFLAGS=-fPIC"
+  `./configure --only=CentauroPlugin --fastjet-config=YOURPATH/fastjet-install/bin/fastjet-config CXXFLAGS=-fPIC CFLAGS=-fPIC`
   
 Then do
-  `make"
-  `make install"
+  `make`
+  `make install`
   
 You can then run an example with 
   `./example < ../data/single-epDIS-event.dat'
