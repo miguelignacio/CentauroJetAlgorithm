@@ -19,6 +19,6 @@ You can then run an example with
 
 where single-epDIS-event.dat contains the 4-momentum of the final-state particles of 1 DIS event generated with Pythia8. 
 
-The Centauro algorithm is a hybrid between longitudinally-invariant algorithms used in pp collisions and spherically-invariant algorithms used in ee collisions. 
+The Centauro algorithm is an asymmetric hybrid between longitudinally-invariant algorithms used in pp collisions and spherically-invariant algorithms used in e+e- collisions. 
 
 ![alt text](https://github.com/miguelignacio/CentauroJetAlgorithm/blob/master/Centauro.png?raw=true)
