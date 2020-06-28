@@ -9,3 +9,10 @@ To install it, you should copy this folder as "CentauroPlugin" in your fastjet c
 
 Then do
   ./configure --only=CentauroPlugin --fastjet-config=YOURPATH/fastjet-install/bin/fastjet-config CXXFLAGS=-fPIC CFLAGS=-fPIC
+  make
+  make install
+  
+You can then run an example with 
+  ./example < ../data/single-ep-event.dat
+
+where single-ep-event.dat contains the 4-momentum of the final-state particles of 1 DIS event generated with Pythia8. 
