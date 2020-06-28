@@ -59,39 +59,13 @@ int main(){
   ClusterSequence clust_seq(full_event, jet_def);
 
   vector<PseudoJet> jets = clust_seq.inclusive_jets(0);
-
-  cout << "jets in inclusive clustering " << endl;
-  for (unsigned int i=0; i<jets.size(); i++){
-    const PseudoJet &jet = jets[i];
-    cout << "pt = " << jet.pt()
-	 << ", rap = " << jet.rap() << " e " << jet.e() << endl;
-
-  }
-  cout << endl;
-
-  jets = clust_seq.exclusive_jets(4);
   
-  // print the result
-  //----------------------------------------------------------
-  cout << "hard jets in exclusive N=4 clustering " << endl;
-  for (unsigned int i=0; i<jets.size(); i++){
-    const PseudoJet &jet = jets[i];
-    cout << "pt = " << jet.pt()
-	 << ", rap = " << jet.rap() << endl;
-
-  }
-  cout << endl;
-
-  jets = clust_seq.exclusive_jets(500.);
-
-  // print the result
-  //----------------------------------------------------------
-  cout << "hard jets in exclusive clustering up to d = 500" << endl;
-  for (unsigned int i=0; i<jets.size(); i++){
-    const PseudoJet &jet = jets[i];
-    cout << "pt = " << jet.pt()
-	 << ", rap = " << jet.rap() << endl;
-
+  vector<PseudoJet> sortedJets = sorted_by_E(jets);
+  cout << "jets in inclusive clustering " << endl;
+  for (unsigned int i=0; i<sortedJets.size(); i++){
+    const PseudoJet &jet = sortedJets[i];
+    vector<fastjet::PseudoJet> constituents = jet.constituents();
+    cout << " rap = " << jet.rap() << " e " << jet.e() << " n constituents " << constituents.size() << endl;
   }
   cout << endl;
 
