@@ -2,7 +2,7 @@
 // Example on how to use this contribution
 //
 // run it with
-//  ./example < ../data/single-event.dat
+//  ./example < ../data/single-ep-event.dat
 //----------------------------------------------------------------------
 //
 //----------------------------------------------------------------------
