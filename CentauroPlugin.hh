@@ -1,5 +1,6 @@
 // $Id: CentauroPlugin.hh 771 2015-02-21 16:40:07Z vos $
 //
+//The Centauro jet algorithm is described in arXiv:2006.10751, "Asymmetric jet clustering in deep-inelastic scattering", Miguel Arratia, Yiannis Makris, Duff Neill, Felix Ringer, Nobuo Sato.
 //----------------------------------------------------------------------
 // This file is part of FastJet contrib.
 //
@@ -27,12 +28,6 @@ FASTJET_BEGIN_NAMESPACE      // defined in fastjet/internal/base.hh
 
 namespace contrib{
 
-//----------------------------------------------------------------------
-//
-/// CentauroPlugin is a plugin for fastjet (v2.4 upwards)
-///
-/// 
-/// 
 class CentauroPlugin : public JetDefinition::Plugin {
 public:
 

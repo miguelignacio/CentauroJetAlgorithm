@@ -1,8 +1,10 @@
 // $Id: CentauroPlugin.cc 1209 2018-12-05 16:18:01Z vos $
 //
+//The Centauro jet algorithm is described in arXiv:2006.10751, "Asymmetric jet clustering in deep-inelastic scattering", Miguel Arratia, Yiannis Makris, Duff Neill, Felix Ringer, Nobuo Sato.
+  
 //----------------------------------------------------------------------
-// This file is part of FastJet contrib.
-//
+// This code is part of Fastjet contrib
+
 // It is free software; you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the
 // Free Software Foundation; either version 2 of the License, or (at
