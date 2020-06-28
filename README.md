@@ -18,3 +18,6 @@ You can then run an example with
   `./example < ../data/single-epDIS-event.dat`
 
 where single-epDIS-event.dat contains the 4-momentum of the final-state particles of 1 DIS event generated with Pythia8. 
+
+
+![alt text](https://github.com/miguelignacio/CentauroJetAlgorithm/blob/master/Centauro.png?raw=true)
