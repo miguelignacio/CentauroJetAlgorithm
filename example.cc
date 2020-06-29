@@ -49,13 +49,9 @@ int main(){
 
   // create the jet definition using the plugin mechanism 
   //----------------------------------------------------------
-  fastjet::contrib::CentauroPlugin * centauro_plugin = new fastjet::contrib::CentauroPlugin(1.0); 
   //The Centauro jet algorithm is described in arXiv:2006.10751, "Asymmetric jet clustering in deep-inelastic scattering", Miguel Arratia, Yiannis Makris, Duff Neill, Felix Ringer, Nobuo Sato.
-  
+  fastjet::contrib::CentauroPlugin * centauro_plugin = new fastjet::contrib::CentauroPlugin(1.0); 
   fastjet::JetDefinition jet_def(centauro_plugin);
-  // do the clustering and get the jets
-  // only exclusive clustering is supported
-  //-----------------------------------------------------------
   ClusterSequence clust_seq(full_event, jet_def);
 
   vector<PseudoJet> jets = clust_seq.inclusive_jets(0);
