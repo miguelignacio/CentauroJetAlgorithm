@@ -20,6 +20,7 @@ You can then run an example with
 where single-epDIS-event.dat contains the 4-momentum of the final-state particles of 1 DIS event generated with Pythia8. 
 
 Note that you should include `#include "fastjet/contrib/CentauroPlugin.hh"` in your example. 
+Your Makefile should include`-L$(FASTJET3_LIB) -Wl,-rpath,$(FASTJET3_LIB) -lfastjet -lCentauroPlugin\`
 
 The Centauro algorithm is an asymmetric hybrid between longitudinally-invariant algorithms used in pp collisions and spherically-invariant algorithms used in e+e- collisions. 
 
