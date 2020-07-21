@@ -22,6 +22,10 @@ where single-epDIS-event.dat contains the 4-momentum of the final-state particle
 Note that you should include `#include "fastjet/contrib/CentauroPlugin.hh"` in your example. 
 Your Makefile should include`-L$(FASTJET3_LIB) -Wl,-rpath,$(FASTJET3_LIB) -lfastjet -lCentauroPlugin\`
 
+If that does not work, try this way (suggested by Jinlong Zhang and Liang Zheng)
+
+`Use the Makefile inside the fjcontrib directory, do “make libfastjetcontribfragile.so” and then include this .so file in my Makefile by “-L/path_to_there/ -lfastjetcontribfragile”. Of course, the “path_to_there” should be included in the LD_LIBRARY_PATH while running the code later.`
+
 The Centauro algorithm is an asymmetric hybrid between longitudinally-invariant algorithms used in pp collisions and spherically-invariant algorithms used in e+e- collisions. 
 
 ![alt text](https://github.com/miguelignacio/CentauroJetAlgorithm/blob/master/Centauro.png?raw=true)
