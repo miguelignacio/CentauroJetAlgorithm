@@ -1,3 +1,6 @@
+08/04/20. This code is now superseded since Centauro is now part of Fastjet Contrib since release fj contrib-1.045 https://fastjet.hepforge.org/contrib/
+
+
 # CentauroJetAlgorithm
 Implementation of the Centauro jet algorithm (described in ["Asymmetric jet clustering in deep-inelastic scattering"](https://arxiv.org/abs/2006.10751) by Miguel Arratia, Yiannis Makris, Duff Neill, Felix Ringer, Nobuo Sato, [arXiv:2006.10751](https://arxiv.org/abs/2006.10751)) using the FastJet contrib classes. 
 
